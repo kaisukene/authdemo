@@ -1,0 +1,61 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #8A9B68; /* Background color */
+    color: white; /* Text color for contrast */
+}
+
+/* Heading alignment */
+h1, h2 {
+    text-align: center;
+}
+
+/* Header image styling */
+.header-image {
+    background-image: url('./images/header.jpg'); /* Adjust path if needed */
+    height: 150px; /* Adjust height as needed */
+    background-size: cover;
+    background-position: center;
+    border-bottom: 5px solid #937B63; /* Bottom border for separation */
+}
+
+/* User icon styling */
+.user-icon {
+    display: block;
+    margin: 0 auto 20px; /* Center the image and add space below */
+    width: 80px; /* Width of the icon */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Input fields styling */
+input, textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Button styling */
+button {
+    background-color: #B0BC92;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px; /* Rounded corners for buttons */
+}
+
+/* Link styling */
+a {
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #46e3c6; /* Link color */
+}

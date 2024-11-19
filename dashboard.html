@@ -3,17 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    <style>
-        body { font-family: Arial, sans-serif; max-width: 400px; margin: 0 auto; padding: 20px; }
-        button { cursor: pointer; }
-    </style>
+    <title>Recipe Sharing Platform - Dashboard</title>
+    <link rel="stylesheet" href="style.css"> <!-- Seotud CSS fail -->
 </head>
 <body>
-    <h1>Welcome to the Dashboard</h1>
+    <h1>Welcome to the Recipe Sharing Platform</h1>
     <p>This is a protected page. You can only see this if you're logged in.</p>
+
+    <h2>Your Recipes</h2>
+    <ul id="recipeList"></ul>
+
+    <h2>Add a New Recipe</h2>
+    <form id="addRecipeForm">
+        <input type="text" id="recipeTitle" placeholder="Recipe Title" required>
+        <input type="text" id="ingredients" placeholder="Ingredients (comma separated)" required>
+        <textarea id="instructions" placeholder="Instructions" required></textarea>
+        <button type="submit">Add Recipe</button>
+    </form>
+
+    <h2>Search Recipes</h2>
+    <input type="text" id="searchInput" placeholder="Search by ingredients or category">
+    <button id="searchBtn">Search</button>
+
+    <h2>Shopping List</h2>
+    <button id="createShoppingListBtn">Create Shopping List</button>
+
+    <h2>Weekly Menu</h2>
+    <button id="createWeeklyMenuBtn">Create Weekly Menu</button>
+
     <button id="logoutBtn">Logout</button>
 
     <script src="auth.js"></script>
+    <script src="dashboard.js"></script> <!-- Lisame dashboardi JavaScript faili -->
 </body>
 </html>
